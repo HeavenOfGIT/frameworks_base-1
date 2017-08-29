@@ -84,9 +84,13 @@ public class SystemSettings {
         Settings.System.DISPLAY_COLOR_MODE,
         Settings.System.ALARM_ALERT,
         Settings.System.NOTIFICATION_LIGHT_PULSE,
+<<<<<<< HEAD
         Settings.System.SCREENSHOT_SOUND,
         Settings.System.VIBRATE_ON_CONNECT,
         Settings.System.VIBRATE_ON_CALLWAITING,
         Settings.System.VIBRATE_ON_DISCONNECT,
+=======
+        Settings.System.DOUBLE_TAP_SLEEP_GESTURE,
+>>>>>>> 76dff56b9f2... [1/2] base: double tap to sleep on statusbar
     };
 }
