@@ -685,7 +685,18 @@ interface IActivityManager {
     void killUidForPermissionChange(int appId, int userId, String reason);
 
     /**
+<<<<<<< HEAD
      *  Should disable touch if three fingers to screen shot is active?
      */
     boolean isSwipeToScreenshotGestureActive();
+=======
+     * Control the app freezer state. Returns true in case of success, false if the operation
+     * didn't succeed (for example, when the app freezer isn't supported). 
+     * Handling the freezer state via this method is reentrant, that is it can be 
+     * disabled and re-enabled multiple times in parallel. As long as there's a 1:1 disable to
+     * enable match, the freezer is re-enabled at last enable only.
+     * @param enable set it to true to enable the app freezer, false to disable it.
+     */
+    boolean enableAppFreezer(in boolean enable);
+>>>>>>> dc734b12da9... Merge tag 'android-11.0.0_r20' of https://android.googlesource.com/platform/frameworks/base into HEAD
 }
